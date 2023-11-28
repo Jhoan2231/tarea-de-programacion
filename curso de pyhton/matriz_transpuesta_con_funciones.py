@@ -2,16 +2,7 @@ import random
 
 
 def crear_matriz(fila, columna):
-    """
-    Crea una matriz de tamaño fila x columna con números aleatorios entre 1 y 10.
 
-    Args:
-        fila (int): El número de filas de la matriz.
-        columna (int): El número de columnas de la matriz.
-
-    Returns:
-        list: La matriz generada.
-    """
     matriz = []
     for i in range(fila):
         fila_matriz = []
@@ -22,27 +13,14 @@ def crear_matriz(fila, columna):
 
 
 def mostrar_matriz(matriz):
-    """
-    Muestra por pantalla una matriz.
 
-    Args:
-        matriz (list): La matriz a mostrar.
-    """
     for fila in matriz:
         print(fila, end=" ")
         print()
 
 
 def matriz_transpuesta(matriz):
-    """
-    Calcula la matriz transpuesta de una matriz dada.
 
-    Args:
-        matriz (list): La matriz original.
-
-    Returns:
-        list: La matriz transpuesta.
-    """
     filas = len(matriz)
     columnas = len(matriz[0])
     transpuesta = []
@@ -57,11 +35,7 @@ def matriz_transpuesta(matriz):
 
 
 def main():
-    """
-    Función principal del programa.
-    Solicita al usuario el número de filas y columnas de la matriz,
-    crea la matriz, muestra la matriz original y su transpuesta.
-    """
+
     fila = int(input("Ingrese el número de filas: "))
     columna = int(input("Ingrese el número de columnas: "))
 
